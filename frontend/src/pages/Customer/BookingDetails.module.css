@@ -1,0 +1,197 @@
+.container {
+  max-width: 840px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.backLink:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.mainCard {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--border-default);
+  background-color: var(--bg-canvas);
+}
+
+.bookingIdTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+/* Stepper Timeline */
+.stepperContainer {
+  padding: var(--space-5) var(--space-6);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.stepperLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-subtle);
+  margin-bottom: var(--space-3);
+}
+
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.stepItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  z-index: 1;
+}
+
+.stepDot {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
+  border: 2px solid var(--border-default);
+  background-color: var(--bg-surface);
+  color: var(--text-subtle);
+}
+
+.stepDotActive {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.stepDotPassed {
+  border-color: var(--badge-success-text);
+  background-color: var(--badge-success-text);
+  color: #FFFFFF;
+}
+
+.stepTitle {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.stepTitleActive {
+  color: var(--color-primary);
+}
+
+.stepTitlePassed {
+  color: var(--badge-success-text);
+}
+
+/* Details Grid */
+.detailsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+  padding: var(--space-6);
+}
+
+@media (max-width: 650px) {
+  .detailsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detailGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.detailLabel {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-subtle);
+}
+
+.detailValue {
+  font-size: 14px;
+  color: var(--text-main);
+  line-height: 20px;
+}
+
+/* Rating Card Section */
+.ratingSection {
+  padding: var(--space-5) var(--space-6);
+  border-top: 1px solid var(--border-default);
+  background-color: var(--bg-canvas);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.starsRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--color-accent);
+  font-size: 16px;
+}
+
+.rateNowBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 8px 16px;
+  background-color: var(--color-accent);
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+}
+
+.rateNowBtn:hover {
+  background-color: #B45309;
+}

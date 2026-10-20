@@ -1,0 +1,210 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.titleArea h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.titleArea p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.viewBadge {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--color-primary);
+  background-color: var(--color-primary-subtle);
+  border: 1px solid var(--badge-info-border);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+}
+
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.cardToolbar {
+  padding: var(--space-3) var(--space-5);
+  border-bottom: 1px solid var(--border-default);
+  background-color: var(--bg-canvas);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.searchInput {
+  height: 34px;
+  width: 280px;
+  padding: 4px 10px;
+  font-size: 13px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  outline: none;
+}
+
+.searchInput:focus {
+  border-color: var(--color-primary);
+}
+
+.rowCount {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  background-color: var(--bg-canvas);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border-default);
+  user-select: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.table th:hover {
+  color: var(--text-main);
+  background-color: #F1F5F9;
+}
+
+.table td {
+  padding: 12px 14px;
+  font-size: 13px;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-default);
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.table tr:hover td {
+  background-color: var(--bg-canvas);
+}
+
+.sortIcon {
+  font-size: 11px;
+  color: var(--color-primary);
+}
+
+.emptyState {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.stepperBtn {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.stepperBtn:hover {
+  background: #F1F5F9;
+  border-color: var(--color-primary);
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(15, 23, 42, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--space-4);
+}
+
+.modalContent {
+  background: #FFFFFF;
+  border-radius: var(--radius-lg);
+  max-width: 620px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-default);
+  padding: var(--space-6);
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--border-default);
+}
+
+.modalTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: var(--text-muted);
+  line-height: 1;
+  padding: 0 4px;
+}
+
+.closeButton:hover {
+  color: var(--text-main);
+}
+

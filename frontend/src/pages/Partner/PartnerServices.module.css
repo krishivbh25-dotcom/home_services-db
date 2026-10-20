@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.titleArea h1 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+.titleArea p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.table th {
+  background-color: var(--bg-canvas);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  padding: 10px 16px;
+  border-bottom: 1px solid var(--border-default);
+}
+
+.table td {
+  padding: 12px 16px;
+  font-size: 13px;
+  color: var(--text-main);
+  border-bottom: 1px solid var(--border-default);
+  vertical-align: middle;
+}
+
+.table tr:last-child td {
+  border-bottom: none;
+}
+
+.priceInput {
+  width: 90px;
+  height: 32px;
+  padding: 4px 8px;
+  font-size: 13px;
+  font-family: var(--font-mono);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  outline: none;
+}
+
+.priceInput:focus {
+  border-color: var(--color-primary);
+}
+
+.saveBtn {
+  height: 32px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  margin-left: var(--space-2);
+}
+
+.saveBtn:hover:not(:disabled) {
+  background-color: var(--color-primary-hover);
+}
+
+.saveBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toggleBtn {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.toggleActive {
+  background-color: var(--badge-success-bg);
+  color: var(--badge-success-text);
+  border-color: var(--badge-success-border);
+}
+
+.toggleInactive {
+  background-color: var(--badge-danger-bg);
+  color: var(--badge-danger-text);
+  border-color: var(--badge-danger-border);
+}
+
+.emptyState {
+  padding: var(--space-8);
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 13px;
+}
